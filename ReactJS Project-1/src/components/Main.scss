@@ -1,0 +1,28 @@
+body{
+    font-family: 'Piazzolla',serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+// Media Queries
+@media only screen and (min-width:992px){
+    .plants{
+        // Convert column into row
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        row-gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+}
