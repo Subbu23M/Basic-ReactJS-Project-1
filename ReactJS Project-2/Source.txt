@@ -1,0 +1,48 @@
+To include Bootstrap4 We use this command.
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+To include Sass files in React we use,
+import './Map.scss';
+
+Place all images in src -> assets -> images -> 
+Save the image with Capitalize.jpg
+
+import photo from '../path
+
+// Logo Image
+// import Logo from '../assets/images/Logo-1.2.png'
+
+<img src={photo}
+
+To include Google Fonts, we should add @import google fonts in scss file. And add font-family in body tag.
+
+Install react-icons using,
+npm install react-icons --save
+
+npm install react-icons
+
+[About functional components
+
+Three Level Architecture
+
+<Parent Component/> - Child Component Instance
+
+<Child properties with values/> 
+
+<Child Component hard code html elements we access the above properties/> ]
+
+import { FaBeer } from 'react-icons/fa';
+return <h3> Lets go for a <FaBeer />? </h3>
+
+// Font Awesome Icons
+import { FaAccessibleIcon } from "react-icons/fa";
+
+import {FaMobileAlt} from "react-icons/fa";
+
+import { FiGlobe } from "react-icons/fa";
+
+import { BsCodeSlash } from "react-icons/fa";
+
+import { HiOutlineDesktopComputer } from "react-icons/fa";
+
+#FCF300;

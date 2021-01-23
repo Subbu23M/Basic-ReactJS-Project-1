@@ -1,0 +1,118 @@
+// Universal Affects
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis',sans-serif;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+button{
+    font-family: 'Dosis',sans-serif;
+}
+
+button:focus{
+    outline: none;
+}
+
+.height{
+    min-height: 100vh;
+}
+
+.banner{
+    background: url(./assets/images/Header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // If we use object-fit: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+}
+
+.text{
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+.tex{
+    padding-top: 1%;
+    padding-left: 5%;
+}
+
+// For Service section
+#service{
+    .ital{
+        font-style: italic;
+    }
+}
+
+.underline{
+    width: 140px;
+    height: .3rem;
+}
+
+// For xs- screens 
+
+// Media Queries
+@media only screen and (max-width:600px){
+    .people{
+        // Convert row into column
+        display: grid;
+        
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+// For lg-screens
+
+// Media Queries
+@media only screen and (min-width:992px){
+    .people{
+        // Convert row into column
+        display: grid;
+        
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
+
+// For xs- screens 
+
+// Media Queries
+@media only screen and (max-width:600px){
+    .tea{
+        // Convert row into column
+        display: grid;
+
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+// For lg-screens
+
+// Media Queries
+@media only screen and (min-width:992px){
+    .tea{
+        // Convert row into column
+        display: grid;
+
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
+
+// Colors
+$yellowColor:#FCF300;
+
+footer{
+    background-color:$yellowColor;
+}
